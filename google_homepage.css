@@ -1,0 +1,14 @@
+.google_logo {
+    grid-area: logo;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-areas:
+        "header header header"
+        ". logo ."
+        ". search ."
+        "footer footer footer"
+}
