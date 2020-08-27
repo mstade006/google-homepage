@@ -1,14 +1,36 @@
-.google_logo {
-    grid-area: logo;
-}
-
 .container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-template-rows: 100px 1fr 1fr 100px;
-    grid-template-areas:
-        "header header header"
-        ". logo ."
-        ". search ."
-        "footer footer footer"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header"
+    ". logo ."
+    ". form ."
+    "footer footer footer";
 }
+
+.footer {
+    background-color: gray;
+}
+
+#google_logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+
+#search_form {
+    grid-area: form;
+    justify-self: center;
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    display: inline;
+  }
