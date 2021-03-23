@@ -10,8 +10,24 @@
 }
 
 .footer {
-    background-color: gray;
+    background-color: #d3d3d3;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
+
+.div_header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+
+.div_footer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 
 #google_logo {
     grid-area: logo;
@@ -25,12 +41,14 @@
     align-self: center;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#header_text {
+    display: inline;
   }
 
-li {
+#left_footer_text {
     display: inline;
+  }
+
+#right_footer_text {
+    margin-left: auto;
   }
